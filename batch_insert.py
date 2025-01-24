@@ -24,7 +24,7 @@ def read_json_in_batches(file_path, batch_size = BATCH_SIZE):
 
 def transform_to_clickhouse_format(batch):
     return [
-        (row["bucket"], row["hostname"], row["clientip"], row["vtc"], row["cid"], row["path"], row["graphqlop"], row["headerorder"], row["cipherorder"], row["timestamp"] )  # Adjust field mapping
+        (row["bucket"], row["hostname"], row["clientip"], row["vtc"]) # all clickhouse rows
         for row in batch
     ]
 

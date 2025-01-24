@@ -4,5 +4,5 @@ CH_PORT = 8123
 CH_USER = "<username>" 
 CH_PASSWORD = get_passcode()
 CH_DATABASE = "eis_cs" 
-CH_TABLE = "CountingSystemXY" 
+CH_TABLE = "<table-name>" 
 BATCH_SIZE = 100000
